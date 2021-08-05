@@ -1,0 +1,56 @@
+.game {
+	width: 800px;
+	height: 300px;
+	border-bottom: 2px solid #000;
+	margin: auto;
+}
+
+#mario {
+	width: 70px;
+	height: 70px;
+	background-image: url("../images/mario.png");
+	background-size: 70px 70px;
+	position: relative;
+	top: 230px;
+}
+
+#pipe {
+	width: 30px;
+	height: 50px;
+	background-image: url("../images/mario_pipe.png");
+	position: relative;
+	top: 180px;
+	left: 770px;
+	animation: pipeMov 1.5s infinite linear;
+}
+
+@keyframes pipeMov {
+	0% {
+		left: 770px;
+	}
+	100% {
+		left: -20px;
+	}
+}
+
+.jump {
+	animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+	0% {
+		top: 230px;
+	}
+	30% {
+		top: 200px;
+	}
+	50% {
+		top: 110px;
+	}
+	80% {
+		top: 200px;
+	}
+	100% {
+		top: 230px;
+	}
+}
